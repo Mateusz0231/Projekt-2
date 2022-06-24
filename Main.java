@@ -19,28 +19,24 @@ class Main {
     
 
     //Wyznaczenie silni działa prawidłowo do 20 
- //Poniżej jest program na wyszukanie wartości który niestety nie zadziałał
-    
-   // Scanner a =new Scanner(System.in);
-   //int t = a.nextInt();
-  
-   // for (int i = 0; i<t; i++) {
-       
-        //Scanner b = new Scanner(System.in);
-        // int liczba = a.nextInt();
-      
-        // s = obliczSilnia(liczba);
  
-        
-       // while (silnia/10*10==silnia) {
-      //      silnia /= 10;
-       // }
- 
-        
- //       System.out.println(silnia%10);
-  //  }
- 
-    
+   
+{
+
+  long k=1;
+  long j=1;
+	
+	while(j <= n)
+	{
+		k *= j;
+		while(k%10 == 0)
+			k = k/10;
+		k = k%10;
+		j++;
+		
+	}
+	System.out.printf("   Ostatnia niezerowa cyfra silni to %d",k);
+}
+}
     
   }
-}
